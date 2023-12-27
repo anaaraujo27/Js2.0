@@ -1,0 +1,30 @@
+
+Como ligar Javascript ao HTML
+
+Para ligar o código do Javascript ao HTML basta adicionar dentro de <body></body> a tag <script> </script> no final do código e adicionar a propriedade src dentro da primeira tag 
+
+<body>
+
+    <script src=""> </script>
+</body>
+
+ src = source = fonte
+
+ Dentro de src="" insira o nome do documento Javascript para ligalo ao HTML
+
+ <body>
+
+    <script src="nomedoarquivo.js"> </script>
+</body>
+
+Se o arquivo estiver dentro de outra pasta pasta fazer referencia a ele como "assets/pastaqueestaoarquivo/nomedoarquivo.js"
+
+<body>
+
+    <script src="assets/pastaqueestaoarquivo/nomedoarquivo.js"> </script>
+</body>
+     
+Ordem de carregamento para uma melhor experiência do usuário
+ - CSS (head)
+ - HTML 
+ - Javascript (final do body)
