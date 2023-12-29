@@ -1,0 +1,14 @@
+/*As váriáveis são como "gavetas" para guardar informações
+
+Como criar variáveis:
+
+    let idade = 90
+
+Para textos colocamos as variáveis entre "aspas":
+
+    let nome = "Alessandra"
+
+Para exibir o resultado das variáveis no console 
+basta digitar o comando
+    
+   console.log(nome)*/

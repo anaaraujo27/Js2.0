@@ -1,0 +1,18 @@
+Tipos de dados para definir variáveis:
+
+ - String: para definir textos 
+ - Number: para adcionar números
+ - Boolean: para definir valores true ou false
+ - Array: para definir listas com mais de um valor separadas por vírgula 
+ - Object: para exibir informações de mais de uma variável
+
+   let nome = "Ana Beatriz"
+   let idade = 13
+   let logado = false
+   let outros = ["cep", "estado", "cidade", "data", 27]
+   let nascimento = {nome: "Ana Beatriz", idade: 13 }
+
+   Para exibir o tipo da variável ultilize "typeof"
+
+
+ 

@@ -1,0 +1,8 @@
+Para mostrar alguma mensage na tela digite o código
+Javascript 
+
+   alert("aviso que quer mostrar na tela") 
+
+- Para deixar alguma mensagem no console basta digitar o código
+
+   console.log("mensagem que quer mandar")
