@@ -1,0 +1,15 @@
+/* 
+um Tamplate string e como uma " String turbinada "  
+podemos fazer operacoees dentro da prpria string
+
+para usar Tamplate string ultilizamos `` 
+
+para juntar strings em um Tamplate podemos fazer da seginte forma :
+
+let nome = "Ana"
+let segundo = "Beatriz"
+ 
+let nomecompleto = `${nome} ${segundo}`
+
+console.log(nomecompleto)
+*/
