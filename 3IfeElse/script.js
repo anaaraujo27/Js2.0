@@ -1,4 +1,4 @@
-let idade = 90
+let idade = 5
 
 if (idade > 17) 
 {
