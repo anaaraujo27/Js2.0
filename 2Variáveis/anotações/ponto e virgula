@@ -1,0 +1,9 @@
+//No final de cada linha de código você pode colocar um ponto e virgula (opcional) para indicar que uma linha de código terminou
+
+console.log(carro);
+console.log(pao);
+
+//Em alguns casos como quando temos mais de 1 código em uma linha nós devemos (obrigatório) ultilizar o ;
+
+console.log(carro);  console.log(pao)
+ 
