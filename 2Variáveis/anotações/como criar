@@ -1,1 +1,24 @@
+<<<<<<< HEAD
 para criar variáveis ...
+=======
+/*
+
+uma das formas de se criar uma variável e usando o "let"
+
+let nome = "Ana Beatriz"
+Uma vez que essa variável foi criada podemos redefinilas desta forma:
+nome = "Ana Beatriz"
+
+porém existem outras duas formas de se criar uma variável
+
+Podemos ultilizar também o "var"
+
+var nome = "Ana Beatriz"
+Uma vez que essa variável foi criada podemos redefinilas desta forma:
+nome = "Ana Beatriz"
+
+outra maneira é tambem ultilizando o "const"
+porém cont siguinifica "constante", algo que não pode ser alterado (é fixo) como o let e var 
+
+*/
+>>>>>>> d8fed181d99d2286f3867968f0a61d05eb15f9d1

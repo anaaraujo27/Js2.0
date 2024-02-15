@@ -1,0 +1,25 @@
+/*As variáveis também podem agir com operações 
+
+para adições :
+  1 + 1
+
+para subtrações :
+  1 - 1
+
+para multiplicações :
+  1 * 1
+
+para divisões :
+  1 / 1
+
+  Para operações com "Strings"
+  usamos o + para junta-las ou "Contatena-las"
+
+  desta manira;
+  let nome =  'ana beatriz'
+  let sobrenome = 'silva araújo'
+
+  nomecompleto = nome + sobrenome 
+
+  console.log(nomecompleto)
+  */
