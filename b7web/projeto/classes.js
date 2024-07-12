@@ -61,3 +61,28 @@ class MonstroGrande extends Character {
         this.defense = 6
     }
 }
+
+class Stage {
+    constructor(fighter1, fighter2, fighter1EL, fighter2EL) {
+        this.fighter1 = fighter1
+        this.fighter2 = fighter2
+        this.fighter1EL = fighter1EL
+        this.fighter2EL = fighter2EL
+    }
+
+    start() {
+        this.update()
+        // Evento do botão de atacar
+    }
+
+    update() {
+        // fighter 1
+        this.fighter1EL.querySelector('.name').innerHTML = `${this.fighter1.name}`
+        let f1Pct = (this.fighter1.life / this.fighter1.maxLife * 100)
+        this.fighter1EL.querySelector('.bar').style.width = `${f1Pct}%`
+        // fighter 2
+        this.fighter2EL.querySelector('.name').innerHTML = this.fighter2.name
+        let f2Pct = (this.fighter2.life / this.fighter2.maxLife * 100)
+        this.fighter2EL.querySelector('.bar').style.width = `${f2Pct}%`
+    }
+}
