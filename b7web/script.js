@@ -1,9 +1,8 @@
-function createPerson(name, lastName, age) {
-    return {
-        name, 
-        lastName,
-        age
+let person = {
+    name:  'Ana Beatriz',
+    lastName: 'Silva Araujo',
+    age: 14
+    nomeCompleto() {
+        return `${this.name} ${this.lastName}`
     }
 }
-
-let person1 = createPerson('Ana', 'Araujo', 14)
