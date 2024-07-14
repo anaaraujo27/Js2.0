@@ -63,11 +63,12 @@ class MonstroGrande extends Character {
 }
 
 class Stage {
-    constructor(fighter1, fighter2, fighter1EL, fighter2EL) {
+    constructor(fighter1, fighter2, fighter1EL, fighter2EL, logObject) {
         this.fighter1 = fighter1
         this.fighter2 = fighter2
         this.fighter1EL = fighter1EL
         this.fighter2EL = fighter2EL
+        this.log = logObject 
     }
 
     start() {
@@ -80,11 +81,11 @@ class Stage {
 
     update() {
         // fighter 1
-        this.fighter1EL.querySelector('.name').innerHTML = `${this.fighter1.name} - ${this.fighter1.life} HP`
+        this.fighter1EL.querySelector('.name').innerHTML = `${this.fighter1.name} - ${this.fighter1.life.toFixed(1)} HP`
         let f1Pct = (this.fighter1.life / this.fighter1.maxLife * 100)
         this.fighter1EL.querySelector('.bar').style.width = `${f1Pct}%`
         // fighter 2
-        this.fighter2EL.querySelector('.name').innerHTML = `${this.fighter2.name} - ${this.fighter2.life} HP`
+        this.fighter2EL.querySelector('.name').innerHTML = `${this.fighter2.name} - ${this.fighter2.life.toFixed(1)} HP`
         let f2Pct = (this.fighter2.life / this.fighter2.maxLife * 100)
         this.fighter2EL.querySelector('.bar').style.width = `${f2Pct}%`
     }
@@ -92,7 +93,7 @@ class Stage {
     doAttack(attacking, attacked) {
         
         if(attacking.life <= 0 || attacked.life <= 0) {
-            console.log('Atacando pessoa morta')
+            this.log.addMenssage('Atacando pessoa morta')
             return;
         }
 
@@ -104,9 +105,9 @@ class Stage {
 
         if(actualAttack > actualDefense) {
             attacked.life -= actualAttack;
-            console.log(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano ao ${attacked.name}`)
+            this.log.addMenssage(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano ao ${attacked.name}`)
         } else {
-            console.log(`${attacked.name} conseguiu defender.`)
+            this.log.addMenssage(`${attacked.name} conseguiu defender.`)
         }
 
         console.log(actualAttack)
@@ -114,4 +115,25 @@ class Stage {
         this.update();
     }
 
+}
+
+class Log {
+    list = []
+
+    constructor(listEl) {
+        this.listEl = listEl
+    }
+
+    addMenssage(msg) {
+        this.list.push(msg)
+        this.render()
+    }
+
+    render() {
+        this.listEl.innerHTML = ''
+
+        for(let i in this.list) {
+            this.listEl.innerHTML += `<li>${this.list[i]}</li>`
+        }
+    }
 }
