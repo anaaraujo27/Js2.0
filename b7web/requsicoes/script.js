@@ -35,3 +35,14 @@ Response = Resposta
  XML = antigo padrao de linguagem de comunicacao entre as maquinas
 
 */
+
+/*
+
+O que e um CALLBACK?
+- Se aplica em eventos (click) e requisicoes
+
+call back = ligar de volta
+
+
+
+*/
