@@ -44,5 +44,4 @@ O que e um CALLBACK?
 call back = ligar de volta
 
 
-
 */
