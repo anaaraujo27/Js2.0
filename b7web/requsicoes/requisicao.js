@@ -1,11 +1,14 @@
 // http://jsonplaceholder.typicode.com/posts
 
 function clicou() {
-    fetch('http://jsonplaceholder.typicode.com/posts').then((data) => {
-        return data.json();
+    let req = fetch('http://jsonplaceholder.typicode.com/posts')
+    
+    req.then((data) => {
+        return data.json()
     })
-    .then((data) => {
-        console.log(data)
+
+    .then((json) => {
+        alert(`Titulo do primeiro post: ${json[0].title}`)
     })
 }
 
