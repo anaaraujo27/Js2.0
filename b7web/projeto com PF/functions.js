@@ -88,8 +88,8 @@ const stage = {
             return;
         }
 
-        const attackFactor = (Math.random() * 2)toFixed(2)
-        const defenseFactor = (Math.random() * 2)toFixed(2)
+        const attackFactor = (Math.random() * 2).toFixed(2)
+        const defenseFactor = (Math.random() * 2).toFixed(2)
 
 
         const actualAttack = attacking.attack * attackFactor
