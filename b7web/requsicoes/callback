@@ -1,0 +1,5 @@
+function alertar() {
+    alert('funciona')
+}
+
+setTimeout(alertar(), 2000)

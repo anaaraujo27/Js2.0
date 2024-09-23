@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 
-h1 {
+#titulo  {
     text-align: center;
     color: #FFF2E7;
     width: 308px;
@@ -66,4 +66,29 @@ legend {
     color: #2F2325;
     width: 85px;
     height: 40px;
+}
+
+.posts > h1 {
+    color: #ECD6C4;
+    font-family: "Zain", sans-serif;
+    margin-left: 40px;
+    font-size: 2.3rem;
+}
+
+.posts > p {
+    color: #ECD6C4;
+    margin: 25px;
+    font-size: 20px;
+}
+
+.posts > hr {
+    margin-left: 0px;
+    border-radius: 0.4px;
+    border-color: #FFF2E7;
+}
+
+.posts {
+    color: #ECD6C4; 
+    font-family: "Zain", sans-serif;
+    font-size: 30px;
 }

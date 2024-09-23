@@ -1,0 +1,7 @@
+.demo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+}
